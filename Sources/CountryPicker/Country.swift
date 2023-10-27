@@ -31,16 +31,16 @@ public extension Country {
         let id = NSLocale.localeIdentifier(fromComponents: [NSLocale.Key.countryCode.rawValue: isoCode])
         let name = NSLocale(localeIdentifier: CountryManager.shared.localeIdentifier)
             .displayName(forKey: NSLocale.Key.identifier, value: id) ?? isoCode
-        if name == "türkiye" {
-            return "turkey"
+        if name == "Türkiye" {
+            return "Turkey"
         }else if name == "Curaçao" {
-            return "curacao"
-        }else if name == "Côte d'Ivoire" {
-            return "Cote d'Ivoire"
+            return "Curacao"
+        }else if name == "Côte d'lvoire" {
+            return "Cote d'lvoire"
         }else if name == "Réunion" {
             return "Reunion"
-        }else if name == "São Tomé and Príncipe" {
-            return "Aao Tome And Principe"
+        }else if name == "São Tomé & Príncipe" {
+            return "Sao Tome And Principe"
         }
         return name
     }
